@@ -54,61 +54,45 @@ table {
 	box-sizing: border-box;
 }
 body{
-	background-color: #EFEFEF;
+	background-color: #f0e2e2;
 	line-height: 1.2;
 }
+/* container */
 .container{
 	max-width: 1300px;
 	margin:0 auto;
 	background-color: white;
+	padding: 32px;
 }
+/* header styles */
 .header{
 	text-align: center;
 	font-size: 38px;
 }
-h2{
+h1{
 	text-align: center;
-	font-size: 30px;
+	font-size: 60px;
+	margin-bottom: 32px;
 }
-h3{
-	float:right;
+
+aside{
+	width: 25%;
+
+}
+article{
+	width: 50%;
+}
+article img{
+	width:300px;
+}
+.left-sidebar{
 	font-size: 20px;
-	width:20%;
-	margin: 1.5%;
-	padding: 20px;
 }
-h4{
-	float:left;
-	font-size: 18px;
-	width:20%;
-	padding: 20px;
-	margin: 1.5%;
+.heading{
+	font-size: 44px;
+	font-size: 600;
 }
-p{
-	font-size: 16px;
-	float:none;
-	width: 50%;
-	margin:2%;
-	object-fit: cover;
-}
-img{
-	width: 50%;
-	height: 400px;
-}
-.col{
-display: inline;
-margin:12px 32px;
-}
- .col-1-2{
-float: none;
-width: 50%
-}
-.cat-article{
-margin: 0 auto;
-}
-.col-1-1{
-	display: block;
-}
+/* clearfix */
 .clearfix::before,::after{
 	content: "";
 	display: table;
