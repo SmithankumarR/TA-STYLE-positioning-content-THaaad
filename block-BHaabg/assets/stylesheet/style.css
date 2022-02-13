@@ -62,21 +62,18 @@ body{
     padding-top: 20px;
 }
 .header{
-    position:static;
     background-color: #272727;
-    font-size: 0;
-    width: 100%;
+    position: fixed;
     padding: 16px;
+width:65.5%;
+
 
 }
 .mylogo{
     width: 80px;
     border-radius: 50%;
 }
-.header, .navbar{
-display: inline-block;
-vertical-align: middle;
-}
+
 .navbar{
     float: right;
 }
@@ -88,54 +85,51 @@ vertical-align: middle;
     color: white;
 
 }
-/* section design */
-.col{
-    line-height: 1.6;
-}
-h1{
-    font-size: 32px;
-    font-weight: 400;
-    width: 50%;
-}
-p{
-    font-size: 26px;
-    width: 50%;
-}
-.col{
-    position:relative;
-}
-.col-1-1,.col-1-2{
-    display: inline-block;
-}
 /* article style */
+.article{
+    padding: 0 80px ;
+    padding-top: 150px;
+}
+.col{
+    float: left;
+    width: 50%;
+}
+.article-heading{
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+.article-text{
+    font-size: 28px;
+    line-height: 1.7;
+}
+.article-col-left{
+    padding-right: 36px;
+}
 .article-img{
-    width: 360px;
-    height:240px;
-    position:relative;
-    float: right;
+   width: 50%;
+   border: 2px solid black;
     border-radius: 20px;
     float: right;
+    margin-top: 30px;
+}
+/* gallery
+ */
+ .gallery{
+     padding:0  80px ;
+ }
+ .col{
+     float: left;
+    }
+.col-1-3{
+        width: 30%;
+        margin: 1.5%;
+    }
+.gallery img{
+width: 300px; 
+height: 250px; 
+border-radius: 20px;
+  }
 
-}
-.row img{
-    width:350px;
-    height: 250px;
-    border-radius: 30px;
-}
-.col-2-1,.col-2-2,.col-2-3{
-    background-color: rgb(203, 245, 231);
-    display: inline-block;
-    width: 32.3%;
-    margin: 2% 0;
-    padding: 20px;
-}
-.col-3-1,.col-3-2,.col-3-3{
-    background-color: rgb(203, 245, 231);
-    display: inline-block;
-    width: 32.3%;
-    margin: 2% 0;
-    padding: 20px;
-}
 /* clearflix */
 .clearfix::before, 
 .clearfix::after{
@@ -149,10 +143,28 @@ p{
 }
 /* footer style */
 .footer{
-    position:static;
     background-color: #272727;
-    width: 100%;
     padding: 20px;
-    color: white;
     font-size: 20px;
+    text-align: center;
 }
+.footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 0 12px;
+
+}
+.top-btn{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: black;
+    background-color: rgb(14, 26, 26);
+    position: fixed;
+right: 32px;
+    bottom: 32px;
+    text-align: center;
+    line-height: 45px;
+}
+
