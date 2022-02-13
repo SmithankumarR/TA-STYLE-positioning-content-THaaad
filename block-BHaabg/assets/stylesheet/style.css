@@ -1,0 +1,158 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    background-color: rgba(202, 211, 211, 0.945);
+}
+.container{
+    background-color: bisque;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* header styles */
+.navbar{
+    float: right;
+    padding-top: 20px;
+}
+.header{
+    position:static;
+    background-color: #272727;
+    font-size: 0;
+    width: 100%;
+    padding: 16px;
+
+}
+.mylogo{
+    width: 80px;
+    border-radius: 50%;
+}
+.header, .navbar{
+display: inline-block;
+vertical-align: middle;
+}
+.navbar{
+    float: right;
+}
+.navbar a{
+    font-size: 20px;
+    margin-left: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+/* section design */
+.col{
+    line-height: 1.6;
+}
+h1{
+    font-size: 32px;
+    font-weight: 400;
+    width: 50%;
+}
+p{
+    font-size: 26px;
+    width: 50%;
+}
+.col{
+    position:relative;
+}
+.col-1-1,.col-1-2{
+    display: inline-block;
+}
+/* article style */
+.article-img{
+    width: 360px;
+    height:240px;
+    position:relative;
+    float: right;
+    border-radius: 20px;
+    float: right;
+
+}
+.row img{
+    width:350px;
+    height: 250px;
+    border-radius: 30px;
+}
+.col-2-1,.col-2-2,.col-2-3{
+    background-color: rgb(203, 245, 231);
+    display: inline-block;
+    width: 32.3%;
+    margin: 2% 0;
+    padding: 20px;
+}
+.col-3-1,.col-3-2,.col-3-3{
+    background-color: rgb(203, 245, 231);
+    display: inline-block;
+    width: 32.3%;
+    margin: 2% 0;
+    padding: 20px;
+}
+/* clearflix */
+.clearfix::before, 
+.clearfix::after{
+    content: " ";
+    display: table;
+
+}
+.clearfix::after{
+    clear: both;
+
+}
+/* footer style */
+.footer{
+    position:static;
+    background-color: #272727;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}

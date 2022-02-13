@@ -6,10 +6,90 @@
 
 3. The header must be fixed at the top of the page.
 
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+4. Inside the main content take an article section having two columns.
+ In the first column put a heading and some introductory text of the article 
+ and in the second column take an image.
 
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+5. After the article section, take a gallery section, in which there will
+ be two rows and in both the row there will be three columns. Each column must
+  have a different image.
 
 6. After the gallery section footer will come.
 
-7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+7. Take a circular button at the right bottom corner of the page
+ and keep its
+ position fixed. The button should always take to the top of the page 
+ once clicked. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment level 1 | unique position </title>
+    <link rel="stylesheet" href="assets/stylesheet/style.css">
+</head>
+<body>
+    <div class="container clearfix">
+        <header class="header">
+            <div> <img src="assets/media/logo.jpeg" alt="logo" class="mylogo">
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav></div>
+        </header>
+    <main>
+        <section>
+            <div class="container clearfix">
+                <article class="col col-1-1">
+
+                    <h1>Welcome to Cario-world</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore obcaecati exercitationem officia deserunt molestias, maxime in. Excepturi est pariatur, quidem, rem autem atque tempora, cum asperiores aperiam fuga molestiae ipsam quos adipisci cumque illum quisquam perferendis voluptatem tempore exercitationem quia!</p>
+
+                <span class="col col-1-2">
+                    <img src="assets/media/pic.jpeg" alt="showroom" class="article-img">
+                </span>
+                </article>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="row">
+                <span class=" col col-2-1">
+                    <img src="assets/media/pic1.jpeg" alt="carphoto">
+                </span>
+                <span class=" col col-2-2">
+                    <img src="assets/media/pic2.jpeg" alt="red car">
+                </span>
+                <span class=" col col-2-3">
+                    <img src="assets/media/pic3.jpeg" alt="new car">
+                </span>
+
+            </div>
+            <div class="row">
+                <span class=" col col-3-1">
+                    <img src="assets/media/bike1.jpeg" alt="bike">
+                </span>
+                <span class=" col col-3-2">
+                    <img src="assets/media/bike2.jpeg" alt="ducatti">
+                </span>
+                <span class=" col col-3-3">
+                    <img src="assets/media/bike3.jpeg" alt="bullet">
+                </span>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <small>&copy;cariomart - 2022</small>
+            <nav class="navbar">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </nav>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
